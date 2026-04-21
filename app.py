@@ -186,10 +186,10 @@ if uploaded_file is not None:
                 return "color: #16a34a; font-weight: bold;"
             return ""
 
-        styled_preview = df.head(500).style.applymap(
-            highlight,
-            subset=["Prediction_Label"]
-        )
+        styled_preview = df.head(500).style.map(
+    highlight,
+    subset=["Prediction_Label"]
+)
 
         st.dataframe(styled_preview, use_container_width=True)
 
