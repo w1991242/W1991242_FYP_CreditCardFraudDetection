@@ -8,7 +8,7 @@ import altair as alt
 # App configuration
 # ===============================
 st.set_page_config(
-    page_title="Credit Card Fraud Detection – IPD Prototype",
+    page_title="Credit Card Fraud Detection",
     layout="wide"
 )
 
@@ -42,16 +42,16 @@ EXPECTED_FEATURES = (
 model = joblib.load("fraud_model.pkl")
 scaler = joblib.load("scaler.pkl")
 
-# 🔍 DEBUG: Check which model is loaded
+
 st.write("Model in use:", type(model).__name__)
 
 # ===============================
 # Title
 # ===============================
-st.title("💳 Credit Card Fraud Detection – Prototype")
+st.title("💳 Credit Card Fraud Detection")
 
 st.write(
-    "This prototype demonstrates how a trained machine learning model is "
+    "This app demonstrates how a trained machine learning model is "
     "integrated into a web-based system to identify potentially fraudulent "
     "credit card transactions."
 )
