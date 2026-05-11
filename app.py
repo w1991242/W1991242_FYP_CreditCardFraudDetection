@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 # ===============================
-# Styling (dark-mode safe)
+# Styling 
 # ===============================
 st.markdown(
     """
